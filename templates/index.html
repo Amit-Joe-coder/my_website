@@ -5,14 +5,30 @@
 {% block body_class %}home-page{% endblock %}
 
 {% block content %}
+  <section class="hero-section">
+    <h1>Turning Data Into Decisions</h1>
 
-<main>
+    <p>
+      Data Analytics • FP&A • AI Automation • Content Creation
+    </p>
+
+    <div class="hero-buttons">
+      <a href="{{ url_for('portfolio') }}" class="btn-primary">
+        View Portfolio
+      </a>
+
+      <a href="mailto:joe.amit@yahoo.com" class="btn-secondary">
+        Contact Me
+      </a>
+    </div>
+  </section>
   <section id="about" class="fade-in delay-300 card">
     <h2>About Me</h2>
     <p>
       I'm <strong>Amit Joe</strong>, a passionate creator, data enthusiast, and traveler.
       I specialize in <strong>Data Analytics, Business Intelligence, FP&A, AI Automation</strong>,
-      and content creation. I enjoy transforming data into actionable insights and sharing knowledge through my YouTube channel.
+      and content creation. I enjoy transforming data into actionable insights and sharing knowledge through my YouTube
+      channel.
     </p>
   </section>
 
@@ -44,5 +60,4 @@
       or explore my latest projects and content below.
     </p>
   </section>
-</main>
 {% endblock %}
