@@ -1,79 +1,205 @@
 {% extends "base.html" %}
-{% block title %}Portfolio | WiKi{% endblock %}
+
+{% block title %}Portfolio | TechNomadWiki{% endblock %}
+
 {% block content %}
-  <section>
-    <h2 class="text-3xl font-bold text-center">🚀 My Projects & Learning Journey</h2>
 
-    <!-- Excel Dashboards -->
-    <div class="card" data-aos="fade-left" data-aos-delay="600">
-      <h3>📊 Excel Dashboards for Sales & Analytics</h3>
-      <img src="{{ url_for('static', filename='images/protein_sale.png') }}" alt="Excel Dashboard">
-      <p>I’ve built data dashboards for protein sales using Excel and Power Query. These dashboards show trends, growth
-        metrics, and SKU-level breakdowns—shared publicly on
-        <a href="https://www.linkedin.com/in/amit-joe-703174223" target=" _blank">LinkedIn</a> to demonstrate real-time
-        analytics skills.
-      </p>
-    </div>
+<section class="hero-section">
 
-    <!-- Automation Sundays -->
-    <div class="card fade-in">
-      <h3>🤖 Automation Sundays with n8n</h3>
-      <img src="{{ url_for('static', filename='images/dhanBot.png') }}" alt="n8n Workflow">
-      <p>Every Sunday, I work on automating tasks using <strong>n8n</strong>—from scraping data to posting Telegram
-        alerts. These no-code workflows help me learn integrations between APIs and services like Google Sheets,
-        Telegram, and Airtable.</p>
-    </div>
+```
+<p class="hero-kicker">
+    Projects • Analytics • Finance • Automation
+</p>
 
-    <!-- Telegram Bot -->
-    <div class="card" data-aos="fade-left" data-aos-delay="600">
-      <h3>💬 Telegram Bot for Task Automation</h3>
-      <img src="{{ url_for('static', filename='images/airtable_bot.png') }}" alt="Telegram Bot Screenshot">
-      <p>This bot receives commands in chat and automates responses, triggers n8n workflows, or updates data entries.
-        Built using Python’s Telebot framework and deployed using Render for always-on support.</p>
-    </div>
+<h1>Portfolio</h1>
 
-    <!-- Airtable Rating System -->
-    <div class="card" data-aos="zoom-in">
-      <h3>⭐ Airtable Automatic Rating System</h3>
-      <img src="{{ url_for('static', filename='images/airtable_automate.png') }}" alt="Airtable Screenshot">
-      <p>Users give feedback via form, and n8n processes this input into Airtable where it’s categorized and auto-rated.
-        This project taught me about webhook triggers, filters, and using Airtable as a lightweight backend.</p>
-    </div>
+<p class="hero-summary">
+    A collection of analytics projects, automation solutions,
+    banking-related learning experiences, and certifications
+    demonstrating my journey in Finance Analytics,
+    Business Intelligence, and Data Analytics.
+</p>
+```
 
+</section>
 
-    <!-- ✅ Paste your JP Morgan card here -->
-    <div class="card" data-aos="fade-left" data-aos-delay="600">
-      <h3>🎓 JP Morgan Quantitative Research Virtual Experience</h3>
-      <img src="{{ url_for('static', filename='images/jp_1.jpg') }}" alt="JP Morgan Certificate">
-      <p>
-        Successfully completed the <strong>JP Morgan Quantitative Research Virtual Experience</strong> on Forage.
-        Worked on financial data analysis, forecasting methodologies, and quantitative problem-solving techniques used
-        in
-        investment banking and financial markets.
-      </p>
-      <a href="https://www.theforage.com/simulations/jpmorgan/quantitative-research-11oc" target="_blank" class="btn">🔗
-        View Certificate</a>
-    </div>
+<!-- Banking Experience -->
 
-    <div class="card" data-aos="fade-right">
-  <h3>🏦 Standard Chartered Banking & Coverage Virtual Experience</h3>
+<section class="card" data-aos="fade-up">
 
-  <img src="{{ url_for('static', filename='images/sdcd.png') }}"
-     alt="Standard Chartered Certificate">
-  <p>
-    Completed a credit analysis simulation focused on evaluating a sustainable manufacturing company.
-    Performed quantitative and qualitative assessment, analyzed industry trends, and presented findings
-    to support lending decisions.
-  </p>
+```
+<h2>🏦 Banking & Analytics Experience</h2>
 
-  <a href="https://www.theforage.com/completion-certificates/ZsgybEFo5RxyHxwXL/TwxTEuyPugfgMGm8H_ZsgybEFo5RxyHxwXL_4q6raJFynrJKnDEPb_1781289205271_completion_certificate.pdf" class="btn">🔗 View Certificate</a>
-</div>
+<p>
+    As a Senior Executive at ICICI Bank, I work with mortgage lending,
+    MIS reporting, client analysis, business reporting, and stakeholder
+    management. This experience has strengthened my analytical mindset
+    and understanding of financial operations.
+</p>
+```
 
-    <!-- Blog -->
-    <div class="card" data-aos="zoom-in" style="opacity: 0.5;">
-      <p>I’m building a blogging section where I’ll post about data analytics, automation experiments, coding tutorials,
-        and productivity hacks. Stay tuned!</p>
-    </div>
+</section>
 
-  </section>
+<!-- Excel Dashboard -->
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>📊 Excel Dashboard for Sales Analytics</h2>
+
+<img src="{{ url_for('static', filename='images/protein_sale.png') }}"
+    alt="Excel Dashboard">
+
+<p>
+    Built interactive Excel dashboards using Power Query to analyze
+    protein sales performance, growth trends, SKU-level insights,
+    and business KPIs.
+</p>
+
+<p>
+    Skills Used:
+    Excel, Power Query, Dashboard Design, Data Analysis.
+</p>
+```
+
+</section>
+
+<!-- n8n -->
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>🤖 Automation Projects with n8n</h2>
+
+<img src="{{ url_for('static', filename='images/dhanBot.png') }}"
+    alt="n8n Workflow">
+
+<p>
+    Built workflow automations integrating APIs, Telegram,
+    Google Sheets, and Airtable to reduce manual effort and
+    automate repetitive business processes.
+</p>
+
+<p>
+    Skills Used:
+    n8n, APIs, Automation, No-Code Development.
+</p>
+```
+
+</section>
+
+<!-- Telegram Bot -->
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>💬 Telegram Automation Bot</h2>
+
+<img src="{{ url_for('static', filename='images/airtable_bot.png') }}"
+    alt="Telegram Bot">
+
+<p>
+    Developed a Telegram bot capable of receiving commands,
+    triggering automation workflows, and updating records
+    through connected services.
+</p>
+
+<p>
+    Skills Used:
+    Python, Telegram Bot API, Automation.
+</p>
+```
+
+</section>
+
+<!-- Airtable -->
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>⭐ Airtable Feedback & Rating System</h2>
+
+<img src="{{ url_for('static', filename='images/airtable_automate.png') }}"
+    alt="Airtable Project">
+
+<p>
+    Created an automated workflow that collects feedback,
+    processes responses, categorizes records, and assigns
+    ratings automatically using Airtable and n8n.
+</p>
+
+<p>
+    Skills Used:
+    Airtable, Automation, Workflow Design.
+</p>
+```
+
+</section>
+
+<!-- Certifications -->
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>🎓 JP Morgan Quantitative Research Virtual Experience</h2>
+
+<img src="{{ url_for('static', filename='images/jp_1.jpg') }}"
+    alt="JP Morgan Certificate">
+
+<p>
+    Completed quantitative research and financial analysis tasks
+    focused on forecasting methodologies and investment research concepts.
+</p>
+
+<a href="https://www.theforage.com/simulations/jpmorgan/quantitative-research-11oc"
+    target="_blank"
+    class="btn">
+
+    View Certificate
+</a>
+```
+
+</section>
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>🏦 Standard Chartered Banking & Coverage Virtual Experience</h2>
+
+<img src="{{ url_for('static', filename='images/sdcd.png') }}"
+    alt="Standard Chartered Certificate">
+
+<p>
+    Conducted credit analysis, evaluated company financial health,
+    reviewed industry trends, and prepared lending recommendations
+    as part of a banking simulation.
+</p>
+
+<a href="https://www.theforage.com/completion-certificates/ZsgybEFo5RxyHxwXL/TwxTEuyPugfgMGm8H_ZsgybEFo5RxyHxwXL_4q6raJFynrJKnDEPb_1781289205271_completion_certificate.pdf"
+    target="_blank"
+    class="btn">
+
+    View Certificate
+</a>
+```
+
+</section>
+
+<!-- Upcoming -->
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>🚀 Upcoming Projects</h2>
+
+<ul class="clean-list">
+    <li>Power BI Business Dashboard</li>
+    <li>SQL Analytics Project</li>
+    <li>FP&A Case Study</li>
+    <li>Financial Reporting Dashboard</li>
+</ul>
+```
+
+</section>
+
 {% endblock %}
