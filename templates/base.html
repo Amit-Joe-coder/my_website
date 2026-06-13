@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
+    <meta name="description"
+        content="Amit Joe (TechNomadWiki) - Data Analytics, FP&A, AI Automation, Power BI, Excel, SQL, and Content Creation Portfolio.">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
     <!-- base.html -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}WiKi's Site{% endblock %}</title>
+    <title>{% block title %}TechNomadWiki Portfolio{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     <!-- Google Fonts -->
@@ -21,6 +24,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/title-animation.css') }}" />
 </head>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <body class="{% block body_class %}{% endblock %}">
 
@@ -55,7 +61,9 @@
     <!-- Footer -->
     <footer role="contentinfo" class="site-footer">
         <div class="footer-container">
-            <p class="footer-text">&copy; 2025 <strong>WiKi</strong>. All rights reserved.</p>
+            <p class="footer-text">
+                &copy; <span id="year"></span> <strong>TechNomadWiki</strong>. All rights reserved.
+            </p>
             <div class="social-links" aria-label="Social Media Links">
                 <a href="https://www.youtube.com/@TechNomadWiki" target="_blank" aria-label="YouTube">
                     <i class="fab fa-youtube"></i>
@@ -90,11 +98,8 @@
         </div>
         <div class="chat-popup">
             <p id="whatsapp-chat-title">Hello 👋<br>How can I help you today?</p>
-           <a href="https://wa.me/9548948480"
-   target="_blank"
-   rel="noopener noreferrer"
-   id="whatsappButton"
-   class="fab-btn whatsapp-btn">
+            <a href="https://wa.me/9548948480" target="_blank" rel="noopener noreferrer" id="whatsappButton"
+                class="fab-btn whatsapp-btn">
         </div>
     </div>
 
