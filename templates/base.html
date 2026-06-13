@@ -1,128 +1,206 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta name="description"
-        content="Amit Joe (TechNomadWiki) - Data Analytics, FP&A, AI Automation, Power BI, Excel, SQL, and Content Creation Portfolio.">
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
-    <!-- base.html -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}TechNomadWiki Portfolio{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet" />
+```
+<title>{% block title %}TechNomadWiki Portfolio{% endblock %}</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<meta name="description"
+    content="Amit Joe - Finance Analytics, Data Analytics, Business Intelligence, FP&A, Power BI, Excel, SQL and AI Automation Portfolio">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/title-animation.css') }}" />
+<link rel="icon" type="image/png"
+    href="{{ url_for('static', filename='images/favicon.png') }}">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    rel="stylesheet">
+
+<!-- Main CSS -->
+<link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+```
+
 </head>
-
-<script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
 <body class="{% block body_class %}{% endblock %}">
 
-    <!-- Header -->
-    <header class="banner-header">
-        <h1>Amit Joe</h1>
-        <p class="header-tagline">
-            Data Analytics • Business Intelligence • FP&A • AI Automation
-        </p>
-        <!-- Navigation -->
-        <nav class="navbar" role="navigation" aria-label="Primary Navigation">
-            <div class="nav-container">
+```
+<!-- Header -->
+<header class="banner-header">
+    <h1>Amit Joe</h1>
 
-                <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="navLinks"
-                    aria-label="Toggle navigation menu">
-                    &#9776;
-                </button>
-                <ul class="nav-links" id="navLinks" hidden>
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
-                    <li><a href="{{ url_for('blog') }}">Blog</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container" role="main">
-        {% block content %}{% endblock %}
-    </main>
-
-    <!-- Footer -->
-    <footer role="contentinfo" class="site-footer">
-  <div class="footer-container">
-    <p class="footer-text">
-      © <span id="year"></span> <strong>TechNomadWiki</strong>. All rights reserved.
+    <p class="header-tagline">
+        Finance Analytics • Business Intelligence • FP&A • Data Analytics
     </p>
 
-    <div class="social-links" aria-label="Social media links">
-      <a href="https://www.youtube.com/@TechNomadWiki" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-        <i class="fab fa-youtube" aria-hidden="true"></i>
-      </a>
-      <a href="https://github.com/Amit-Joe-coder" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <i class="fab fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/amit-joe-703174223/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <i class="fab fa-linkedin" aria-hidden="true"></i>
-      </a>
+    <nav class="navbar" aria-label="Primary Navigation">
+        <div class="nav-container">
+
+            <button class="hamburger"
+                id="hamburger"
+                aria-expanded="false"
+                aria-controls="navLinks"
+                aria-label="Toggle navigation">
+
+                &#9776;
+            </button>
+
+            <ul class="nav-links" id="navLinks" hidden>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+                <li><a href="{{ url_for('blog') }}">Blog</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+    {% block content %}{% endblock %}
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <p class="footer-text">
+            © <span id="year"></span>
+            <strong>TechNomadWiki</strong>. All rights reserved.
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://www.youtube.com/@TechNomadWiki"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube">
+
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://github.com/Amit-Joe-coder"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub">
+
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/amit-joe-703174223/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+        </div>
+
     </div>
-  </div>
 </footer>
 
-<div class="floating-actions" aria-label="Quick actions">
-  <button id="backToTop" type="button" aria-label="Back to top" class="fab-btn top-btn">
-    <i class="fas fa-arrow-up" aria-hidden="true"></i>
-  </button>
+<!-- Floating Buttons -->
 
-  <a href="https://wa.me/9548948480" target="_blank" rel="noopener noreferrer" aria-label="Chat with Amit on WhatsApp" class="fab-btn whatsapp-btn">
-    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-  </a>
-</div>
+<button id="backToTop"
+    class="fab-btn top-btn"
+    aria-label="Back to top">
+
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<a href="https://wa.me/919548948480"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fab-btn whatsapp-btn"
+    aria-label="WhatsApp">
+
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const year = document.getElementById("year");
-    if (year) year.textContent = new Date().getFullYear();
 
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
-    if (hamburger && navLinks) {
-      hamburger.addEventListener("click", () => {
-        const isExpanded = hamburger.getAttribute("aria-expanded") === "true";
-        hamburger.setAttribute("aria-expanded", String(!isExpanded));
-        navLinks.hidden = isExpanded;
-        navLinks.classList.toggle("show", !isExpanded);
-      });
-    }
+    document.addEventListener("DOMContentLoaded", () => {
 
-    const topBtn = document.getElementById("backToTop");
-    if (topBtn) {
-      topBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-      const updateTopButton = () => {
-        topBtn.classList.toggle("is-visible", window.scrollY > 300);
-      };
-      updateTopButton();
-      window.addEventListener("scroll", updateTopButton, { passive: true });
-    }
+        // Footer Year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
 
-    if (window.AOS) {
-      AOS.init({ duration: 700, once: true });
-    }
-  });
+        // Mobile Menu
+        const hamburger =
+            document.getElementById("hamburger");
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+
+            const expanded =
+                hamburger.getAttribute("aria-expanded") === "true";
+
+            hamburger.setAttribute(
+                "aria-expanded",
+                !expanded
+            );
+
+            navLinks.hidden = expanded;
+
+            navLinks.classList.toggle(
+                "show",
+                !expanded
+            );
+        });
+
+        // Back To Top
+
+        const topBtn =
+            document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+
+            topBtn.style.display =
+                window.scrollY > 300
+                    ? "flex"
+                    : "none";
+        });
+
+        topBtn.addEventListener("click", () => {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+
+        // AOS
+
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+    });
+
 </script>
+```
+
 </body>
 
 </html>
