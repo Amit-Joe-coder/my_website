@@ -1,12 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
-  background-color: #222 !important;
+  header {
+    background: linear-gradient(135deg,
+        #0f172a,
+        #1e293b,
+        #334155) !important;
+  }
+
   color: white !important;
   padding: 2rem 1rem !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;          /* Prevent content from overflowing */
+  overflow: hidden;
+  /* Prevent content from overflowing */
   position: relative;
   z-index: 1000;
   text-align: center;
@@ -23,41 +34,7 @@ header {
 }
 
 /* Animations */
-@keyframes pop-word {
-  to {
-    transform: rotateX(0);
-  }
-}
 
-@keyframes show {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes bar-scale {
-  to {
-    transform: scaleY(1);
-  }
-}
-
-@keyframes sparkle {
-  0% {
-    transform: scale(0);
-  }
-  60% {
-    transform: scale(1) translate(4px, 1px) rotate(8deg);
-  }
-  100% {
-    transform: scale(0) translate(4px, 1px) rotate(8deg);
-  }
-}
-
-@keyframes shimmer {
-  to {
-    text-shadow: 0 0 8px red;
-  }
-}
 
 /* === Hero Animation Section === */
 .hero-animation {
@@ -72,12 +49,23 @@ header {
   text-align: center;
 }
 
-h1 {
+.hero-animation h1 {
   color: white;
   font-family: "Playfair Display", Vidaloka, serif;
-  font-size: 8rem;
+  font-size: 3.5rem;
   line-height: 0.85;
   perspective: 500px;
+}
+@media (max-width: 768px) {
+  .hero-animation h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-animation h1 {
+    font-size: 1.8rem;
+  }
 }
 
 .word {
@@ -112,12 +100,10 @@ h1 {
   width: 14%;
   height: 48%;
   animation: bar-scale 0.25s linear 3s 1 forwards;
-  background: linear-gradient(
-    to right,
-    white var(--bar-width),
-    transparent var(--bar-width) calc(100% - var(--bar-width)),
-    white calc(100% - var(--bar-width))
-  );
+  background: linear-gradient(to right,
+      white var(--bar-width),
+      transparent var(--bar-width) calc(100% - var(--bar-width)),
+      white calc(100% - var(--bar-width)));
   content: "";
   transform: scaleY(var(--bar-scale-y));
 }
@@ -131,13 +117,10 @@ h1 {
   width: var(--size);
   height: var(--size);
   animation: sparkle 0.4s linear 3.5s 1 forwards;
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgb(252 249 241 / 94%) 0% 7%,
-      transparent 7% 100%
-    ),
-    conic-gradient(
-      transparent 0deg 18deg,
+      transparent 7% 100%),
+    conic-gradient(transparent 0deg 18deg,
       var(--sparkle-color) 18deg,
       transparent 20deg 40deg,
       var(--sparkle-color) 40deg,
@@ -151,18 +134,15 @@ h1 {
       var(--sparkle-color) 270deg,
       transparent 275deg 300deg,
       var(--sparkle-color) 300deg,
-      transparent 303deg 360deg
-    );
+      transparent 303deg 360deg);
   border-radius: 50%;
-  clip-path: polygon(
-    50% 0,
-    59.13% 26.64%,
-    85.13% -2.35%,
-    100% 50%,
-    50% 100%,
-    0 50%,
-    31.39% 34.86%
-  );
+  clip-path: polygon(50% 0,
+      59.13% 26.64%,
+      85.13% -2.35%,
+      100% 50%,
+      50% 100%,
+      0 50%,
+      31.39% 34.86%);
   content: "";
   filter: blur(1px);
   transform: scale(0);
@@ -176,14 +156,23 @@ h1 {
   max-width: 800px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  transition: all 0.3s ease;
 }
 
-h2, h3 {
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h2,
+h3 {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 1rem;
 }
 
-p, ul, blockquote {
+p,
+ul,
+blockquote {
   font-family: 'Roboto', sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
@@ -226,7 +215,9 @@ blockquote {
     padding: 1rem;
   }
 
-  p, ul, blockquote {
+  p,
+  ul,
+  blockquote {
     font-size: 1rem;
   }
 
@@ -476,21 +467,40 @@ blockquote {
 }
 
 .header-tagline {
+  color: #60a5fa;
   font-size: 1.1rem;
-  color: #ffd700; /* Bright golden yellow */
   font-weight: 600;
-  text-align: center;
   letter-spacing: 1px;
-  margin-top: 0.5rem;
-  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5), 0 0 8px rgba(255, 215, 0, 0.3);
 }
 
 .banner-header h1 {
-  font-family: 'Playfair Display', serif; /* Or your previously used font */
+  font-family: 'Playfair Display', serif;
+  /* Or your previously used font */
   font-weight: 600;
-  font-size: 4rem; /* Adjust size as needed */
-  color: #fff; /* Or your preferred color */
+  font-size: 4rem;
+  /* Adjust size as needed */
+  color: #fff;
+  /* Or your preferred color */
   text-align: center;
   margin: 0 auto 1rem;
   line-height: 1.1;
+}
+
+.card img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.03);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
