@@ -1,91 +1,193 @@
 {% extends "base.html" %}
 
-{% block title %}Home | WiKi{% endblock %}
+{% block title %}Home | TechNomadWiki{% endblock %}
 
 {% block body_class %}home-page{% endblock %}
 
 {% block content %}
+
 <section class="hero-section">
-  <p class="hero-kicker">Data Analytics • FP&A • BI Dashboards • AI Automation</p>
-  <h1>Amit Joe</h1>
-  <p class="hero-summary">
-    I turn operational and financial data into clear dashboards, practical insights,
-    and lightweight automations that help teams make better decisions.
-  </p>
 
-  <div class="hero-buttons" aria-label="Primary actions">
-    <a href="/portfolio" class="btn-primary">View Portfolio</a>
-    <a href="mailto:joe.amit@yahoo.com" class="btn-secondary">Contact Me</a>
-  </div>
-</section>
+```
+<p class="hero-kicker">
+    Finance Analytics • Business Intelligence • FP&A • Data Analytics
+</p>
 
-<section id="about" class="fade-in delay-300 card">
-  <h2>About Me</h2>
-  <p>
-    I'm <strong>Amit Joe</strong>, a data analytics and automation enthusiast focused on
-    <strong>Excel, Power BI, SQL, FP&A, dashboarding, and AI-enabled workflows</strong>.
-    I enjoy turning messy business information into useful reports, visual stories,
-    and repeatable systems.
-  </p>
-</section>
+<h1>Amit Joe</h1>
 
-<section class="card" data-aos="fade-up">
-  <h2>Professional Experience</h2>
-  <h3>Senior Executive | ICICI Bank</h3>
-  <p>
-    Currently working as a Senior Executive at ICICI Bank, supporting mortgage lending
-    operations, MIS reporting, client relationship management, and business analysis.
-    My work includes analyzing client financial information, preparing reports,
-    coordinating client meetings, monitoring loan processes, and supporting data-driven
-    decision-making.
-  </p>
-  <p>
-    This role has strengthened my analytical, reporting, communication, and stakeholder
-    management skills in a fast-paced banking environment. I regularly use Excel for
-    reporting, performance tracking, and operational analysis, which complements my
-    growing expertise in BI, FP&A, and automation.
-  </p>
-</section>
+<p class="hero-summary">
+    Senior Executive at ICICI Bank with experience in Mortgage Lending,
+    MIS Reporting, Client Analysis, and Business Operations.
+    Passionate about Finance Analytics, Business Intelligence,
+    Dashboarding, and Data-Driven Decision Making.
+</p>
 
-<section class="card fade-in delay-600">
-  <h2>What I Do</h2>
-  <ul class="clean-list">
-    <li><strong>Data Analytics & BI:</strong> dashboards, trend analysis, and performance reporting.</li>
-    <li><strong>FP&A:</strong> financial analysis, planning support, and KPI tracking.</li>
-    <li><strong>Automation:</strong> no-code and AI-assisted workflows for repetitive tasks.</li>
-    <li><strong>Content:</strong> tutorials and project walkthroughs for analytics learners.</li>
-  </ul>
+<div class="hero-buttons">
+
+    <a href="{{ url_for('portfolio') }}"
+        class="btn-primary">
+
+        View Portfolio
+    </a>
+
+    <a href="mailto:joe.amit@yahoo.com"
+        class="btn-secondary">
+
+        Contact Me
+    </a>
+
+</div>
+```
+
 </section>
 
 <section class="card" data-aos="fade-up">
-  <h2>Certifications & Learning</h2>
-  <ul class="clean-list">
-    <li>JP Morgan Quantitative Research Virtual Experience</li>
-    <li>Standard Chartered Banking & Coverage Virtual Experience</li>
-    <li>Excel Dashboard & Power Query Projects</li>
-  </ul>
+
+```
+<h2>About Me</h2>
+
+<p>
+    I'm <strong>Amit Joe</strong>, a banking professional and analytics enthusiast.
+    My work combines financial operations, client analysis, MIS reporting,
+    and business insights with modern analytics tools such as Excel,
+    Power BI, SQL, and automation platforms.
+</p>
+
+<p>
+    I enjoy transforming raw data into meaningful reports,
+    dashboards, and actionable recommendations that support
+    business growth and decision-making.
+</p>
+```
+
 </section>
 
 <section class="card" data-aos="fade-up">
-  <h2>Technical Skills</h2>
-  <div class="skills-container" aria-label="Technical skills">
+
+```
+<h2>💼 Professional Experience</h2>
+
+<h3>Senior Executive | ICICI Bank</h3>
+
+<p>
+    Currently working as a Senior Executive at ICICI Bank,
+    supporting mortgage lending operations, MIS reporting,
+    client relationship management, and business analysis.
+</p>
+
+<p>
+    My responsibilities include analyzing client financial information,
+    preparing business reports, coordinating client meetings,
+    monitoring loan processes, and supporting data-driven
+    decision-making across banking operations.
+</p>
+```
+
+</section>
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>📊 What I Do</h2>
+
+<ul class="clean-list">
+
+    <li>
+        <strong>Finance Analytics:</strong>
+        Financial reporting, KPI tracking, and business insights.
+    </li>
+
+    <li>
+        <strong>Business Intelligence:</strong>
+        Dashboard creation, performance monitoring, and data visualization.
+    </li>
+
+    <li>
+        <strong>FP&A:</strong>
+        Planning support, reporting analysis, and forecasting concepts.
+    </li>
+
+    <li>
+        <strong>Automation:</strong>
+        Workflow automation using n8n, APIs, and no-code solutions.
+    </li>
+
+    <li>
+        <strong>Content Creation:</strong>
+        Sharing analytics, automation, and technology learning experiences.
+    </li>
+
+</ul>
+```
+
+</section>
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>🎓 Certifications & Learning</h2>
+
+<ul class="clean-list">
+
+    <li>
+        JP Morgan Quantitative Research Virtual Experience
+    </li>
+
+    <li>
+        Standard Chartered Banking & Coverage Virtual Experience
+    </li>
+
+    <li>
+        Excel Dashboard & Power Query Projects
+    </li>
+
+    <li>
+        Continuous Learning in FP&A, Power BI, SQL, and Business Intelligence
+    </li>
+
+</ul>
+```
+
+</section>
+
+<section class="card" data-aos="fade-up">
+
+```
+<h2>🛠 Technical Skills</h2>
+
+<div class="skills-container">
+
     <span class="skill-badge">Excel</span>
+    <span class="skill-badge">Power Query</span>
     <span class="skill-badge">Power BI</span>
     <span class="skill-badge">SQL</span>
     <span class="skill-badge">Python</span>
-    <span class="skill-badge">Power Query</span>
     <span class="skill-badge">Git</span>
-    <span class="skill-badge">FP&A</span>
     <span class="skill-badge">Financial Analysis</span>
+    <span class="skill-badge">MIS Reporting</span>
+    <span class="skill-badge">FP&A</span>
     <span class="skill-badge">Dashboarding</span>
     <span class="skill-badge">Data Visualization</span>
-  </div>
+    <span class="skill-badge">n8n Automation</span>
+
+</div>
+```
+
 </section>
 
 <section class="contact-strip" data-aos="fade-up">
-  <p>
-    Want to collaborate on a dashboard, report, or automation?
-    <a href="mailto:joe.amit@yahoo.com">Send me an email</a> or explore my projects.
-  </p>
+
+```
+<p>
+    Interested in Finance Analytics, Business Intelligence,
+    Reporting, Dashboarding, or Automation projects?
+
+    <a href="mailto:joe.amit@yahoo.com">
+        Let's connect.
+    </a>
+</p>
+```
+
 </section>
+
 {% endblock %}
