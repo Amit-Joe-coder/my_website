@@ -6,71 +6,60 @@
 
 {% block content %}
 <section class="hero-section">
-  <h1>Turning Data Into Decisions</h1>
-
-  <p>
-    Data Analytics • FP&A • AI Automation • Content Creation
+  <p class="hero-kicker">Data Analytics • FP&A • BI Dashboards • AI Automation</p>
+  <h1>Amit Joe</h1>
+  <p class="hero-summary">
+    I turn operational and financial data into clear dashboards, practical insights,
+    and lightweight automations that help teams make better decisions.
   </p>
 
-  <div class="hero-buttons">
-    <a href="{{ url_for('portfolio') }}" class="btn-primary">
-      View Portfolio
-    </a>
-
-    <a href="mailto:joe.amit@yahoo.com" class="btn-secondary">
-      Contact Me
-    </a>
+  <div class="hero-buttons" aria-label="Primary actions">
+    <a href="/portfolio" class="btn-primary">View Portfolio</a>
+    <a href="mailto:joe.amit@yahoo.com" class="btn-secondary">Contact Me</a>
   </div>
 </section>
+
 <section id="about" class="fade-in delay-300 card">
   <h2>About Me</h2>
   <p>
-    I'm <strong>Amit Joe</strong>, a passionate creator, data enthusiast, and traveler.
-    I specialize in <strong>Data Analytics, Business Intelligence, FP&A, AI Automation</strong>,
-    and content creation. I enjoy transforming data into actionable insights and sharing knowledge through my YouTube
-    channel.
+    I'm <strong>Amit Joe</strong>, a data analytics and automation enthusiast focused on
+    <strong>Excel, Power BI, SQL, FP&A, dashboarding, and AI-enabled workflows</strong>.
+    I enjoy turning messy business information into useful reports, visual stories,
+    and repeatable systems.
   </p>
 </section>
 
 <section class="card" data-aos="fade-up">
-  <h3>💼 Professional Experience</h3>
-
-  ```
-  <h4>Senior Executive | ICICI Bank</h4>
-
+  <h2>Professional Experience</h2>
+  <h3>Senior Executive | ICICI Bank</h3>
   <p>
-    Currently working as a Senior Executive at ICICI Bank, supporting mortgage lending operations,
-    MIS reporting, client relationship management, and business analysis activities.
-    My responsibilities include analyzing client financial information, preparing and reviewing reports,
-    coordinating client meetings, monitoring loan processes, and supporting data-driven decision-making.
+    Currently working as a Senior Executive at ICICI Bank, supporting mortgage lending
+    operations, MIS reporting, client relationship management, and business analysis.
+    My work includes analyzing client financial information, preparing reports,
+    coordinating client meetings, monitoring loan processes, and supporting data-driven
+    decision-making.
   </p>
-
   <p>
-    Through this role, I have developed strong analytical, reporting, communication, and stakeholder
-    management skills while working in a fast-paced banking environment. I regularly utilize Excel
-    for reporting, performance tracking, and operational analysis, which complements my growing
-    expertise in Data Analytics, Business Intelligence, and FP&A.
+    This role has strengthened my analytical, reporting, communication, and stakeholder
+    management skills in a fast-paced banking environment. I regularly use Excel for
+    reporting, performance tracking, and operational analysis, which complements my
+    growing expertise in BI, FP&A, and automation.
   </p>
-  ```
-
 </section>
 
-
 <section class="card fade-in delay-600">
-  <h3>What I Do</h3>
-  <ul>
-    <li>📊 Data Analytics & Business Intelligence</li>
-    <li>📈 Financial Planning & Analysis (FP&A)</li>
-    <li>🤖 AI Automation & No-Code Solutions</li>
-    <li>🎥 YouTube Vlogs & Tech Tutorials</li>
-    <li>🌍 Travel & Creative Content Creation</li>
+  <h2>What I Do</h2>
+  <ul class="clean-list">
+    <li><strong>Data Analytics & BI:</strong> dashboards, trend analysis, and performance reporting.</li>
+    <li><strong>FP&A:</strong> financial analysis, planning support, and KPI tracking.</li>
+    <li><strong>Automation:</strong> no-code and AI-assisted workflows for repetitive tasks.</li>
+    <li><strong>Content:</strong> tutorials and project walkthroughs for analytics learners.</li>
   </ul>
 </section>
 
-<section class="card" data-aos="fade-left" data-aos-delay="600">
-  <h3>🎓 Certifications & Learning</h3>
-
-  <ul>
+<section class="card" data-aos="fade-up">
+  <h2>Certifications & Learning</h2>
+  <ul class="clean-list">
     <li>JP Morgan Quantitative Research Virtual Experience</li>
     <li>Standard Chartered Banking & Coverage Virtual Experience</li>
     <li>Excel Dashboard & Power Query Projects</li>
@@ -78,9 +67,8 @@
 </section>
 
 <section class="card" data-aos="fade-up">
-  <h3>🛠 Technical Skills</h3>
-
-  <div class="skills-container">
+  <h2>Technical Skills</h2>
+  <div class="skills-container" aria-label="Technical skills">
     <span class="skill-badge">Excel</span>
     <span class="skill-badge">Power BI</span>
     <span class="skill-badge">SQL</span>
@@ -94,11 +82,10 @@
   </div>
 </section>
 
-<section data-aos="fade-up">
+<section class="contact-strip" data-aos="fade-up">
   <p>
-    Let's collaborate and build something meaningful! Reach out via
-    <a href="mailto:joe.amit@yahoo.com">email</a>
-    or explore my latest projects and content below.
+    Want to collaborate on a dashboard, report, or automation?
+    <a href="mailto:joe.amit@yahoo.com">Send me an email</a> or explore my projects.
   </p>
 </section>
 {% endblock %}
